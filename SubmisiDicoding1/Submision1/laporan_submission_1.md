@@ -21,10 +21,11 @@ Untuk menjawab pertanyaan tersebut, perusahaan membuat predictive modelling deng
 Dari tujuan atau goals yang ditentukan, berikut ini solusi atau cara untuk meraih goals tersebut:
 - Analisis data dilakukan lebih detail dengan membersihkan data dan beberapa visualisasi data sebelum mencari nilai korelasi
 - Menggunakan beberapa model machine learning untuk memperoleh hasil prediksi yang paling akurat dan setiap model tersebut dilakukan hyperparameter tuning untuk memperoleh model terbaik. Dan mencoba menggunakan berbagai pengolahan data.
-- Seluruh hasil pelatihan model akan dievaluasi berdasarkan metrik Mean Squared Error (mse)
+- Seluruh hasil pelatihan model akan dievaluasi menggunakan Convusion Matrix dengan menghitung Presisi, Recall, dan F1-score
 
 ## Data Understanding
 Pembuatan model machine learning pada proyek menggunakan 1338 data dari Medical Cost Personal Datasets, data dapat diunduh pada tautan ini.
+Dimana penjelasan setiap fitur tidak diberikan oleh publiser. Yang saya hanya menggunakan informasi yang ada pada file informasi yang diberikan pengirim.
 
 ### Variabel-variabel pada Lung Cancer DataSet adalah sebagai berikut:
 - 32 sampel (sebagai pasien) dan 56 atribut (banyak data yang harus dipertimbangkan).
@@ -46,11 +47,8 @@ fitur 38     3.1
 dtype: float64
 yang dapat mempengaruhi hasil nantinya. Dari hasil tersebut maka data dapat dilakukan ke proses selanjutnya untuk mengisi data yang kosong tersebut.
 
-
-https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/korr1.png
-
-https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/kor2.png
-
+![Category 1](https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/korr1.png)
+![Category 2](https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/kor2.png)
 
 Dasi hasil korelasi tersebut, menunjukkan korelasi antara data sangat berkaitan. Sehingga data dapat dilanjutkan ke proses selanjutnya, dengan mengisi data yang kosong.
 
@@ -76,7 +74,7 @@ Dimana fitur 1 - 56 akan menjadi fitur yang ditantai dengan X. Dan y sebagai pen
 Melakukan pembagian data menajadi Data Original, Data Normalisasi, Data Original PCA, Data Normalisasi PCA dengan spliting data 70% untuk data training dan 30 % sebagai data testing.
 
 - Data Original
--
+
 | class | fitur 1 | fitur 2 | fitur 3 | fitur 4 | fitur 5 | fitur 6 | fitur 7 | fitur 8 | fitur 9 | fitur 10 |...	| fitur 56 |
 | ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- | -------- | -------- |
 | 10  |   0	|2	|2	|0	|0	|3	|2	|3	|1	|1	 |...	|2	  |
@@ -131,10 +129,6 @@ Heads of iris_pca:
 | 4 | -1.185845 |-1.218255 | 0.987464 |-2.566320  | 0.910664 | 0.388925 | 1.540951   |
 
 
-| 0    |     1    |     2    |     3    |     4    |     5     |    6 |  \  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-
-
 ## Modeling
 - Teknik Pemodelan yang dipakai:
     - Menggunakan Decision Tree
@@ -166,7 +160,7 @@ Hasil perhitungan convusion matrix berdasarkan data testing.
 - Recall pada test set:  0.5
 
 Visualisasi convusion matrix:
-https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/1.png
+![Evaluation 1](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/1.png)
 
 ### Data Normalisasi
 Hasil perhitungan convusion matrix berdasarkan data testing
@@ -178,7 +172,7 @@ Hasil perhitungan convusion matrix berdasarkan data testing
 - Recall pada test set:  0.5
 
 Visualisasi convusion matrix:
-https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/2.png
+![Evaluation 2](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/2.png)
 
 ### Data Original PCA
 Hasil perhitungan convusion matrix berdasarkan data testing
@@ -190,7 +184,7 @@ Hasil perhitungan convusion matrix berdasarkan data testing
 - Recall pada test set:  0.4
 
 Visualisasi convusion matrix:
-https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/3.png
+![Evaluation 3](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/3.png)
 
 ### Data Normalisasi PCA
 Hasil perhitungan convusion matrix berdasarkan data testing
@@ -202,7 +196,7 @@ Hasil perhitungan convusion matrix berdasarkan data testing
 - Recall pada test set:  0.6
 
 Visualisasi convusion matrix:
-https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/4.png
+![Evaluation 4](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/4.png)
 
 ## Melakukan Proses Review Pemodelan
 
@@ -221,7 +215,7 @@ Model	Accuracy	Recall	Precision
 
 
 Visualisasi perbandingan
-https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/Visualisasi%20Review.png
+![Evaluation 5](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/Visualisasi%20Review.png)
 
 
 ### Kesimpulan
