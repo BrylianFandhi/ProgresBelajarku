@@ -31,6 +31,7 @@ Pembuatan model machine learning pada proyek menggunakan 1338 data dari Medical 
 - terdapat nilai yang hilang.
 - class label ada pada atribut pertama.
 - class label adalah nominal, dengan range: 1, 2, 3.
+
 ![Box Plot](https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/data%20123.png)
 
 
