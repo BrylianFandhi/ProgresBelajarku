@@ -76,7 +76,11 @@ Dimana fitur 1 - 56 akan menjadi fitur yang ditantai dengan X. Dan y sebagai pen
 Melakukan pembagian data menajadi Data Original, Data Normalisasi, Data Original PCA, Data Normalisasi PCA dengan spliting data 70% untuk data training dan 30 % sebagai data testing.
 | First Header  | fitur 1 | fitur 2 | fitur 3 | fitur 4 | fitur 5 | fitur 6 | fitur 7 | fitur 8 | fitur 9 | fitur 10 |...	| fitur 56 |
 | ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- | -------- | -------- |
-| Content Cell  |   0	|2	|2	|0	|0	|3	|2	|3	|1	|1	 |...	|2	  |
+| 10  |   0	|2	|2	|0	|0	|3	|2	|3	|1	|1	 |...	|2	  |
+| 15   |   0	|3	|2	|2	|1	|2	|2	|2	|1	|1	 |...	|2	  |
+| 26   |   0	|2	|2	|2	|0	|2	|1	|2	|1	|1	 |...	|1	  |
+| 6   |   0	|3	|2	|1	|0	|3	|3	|3	|1	|2	 |...	|2	  |
+| 3   |   0	|2	|3	|2	|1	|3	|3	|3	|1	|2	 |...	|1	  |
 
 - Data Original
 |	|fitur 1|fitur 2|fitur 3|fitur 4|fitur 5|fitur 6|fitur 7|fitur 8|fitur 9|fitur 10|...	|fitur 56|
