@@ -74,7 +74,10 @@ Membagi data sebagai fitur dan sebagai objek.
 Dimana fitur 1 - 56 akan menjadi fitur yang ditantai dengan X. Dan y sebagai penanda object atau class
 
 Melakukan pembagian data menajadi Data Original, Data Normalisasi, Data Original PCA, Data Normalisasi PCA dengan spliting data 70% untuk data training dan 30 % sebagai data testing.
-| First Header  | fitur 1 | fitur 2 | fitur 3 | fitur 4 | fitur 5 | fitur 6 | fitur 7 | fitur 8 | fitur 9 | fitur 10 |...	| fitur 56 |
+
+- Data Original
+-
+| class | fitur 1 | fitur 2 | fitur 3 | fitur 4 | fitur 5 | fitur 6 | fitur 7 | fitur 8 | fitur 9 | fitur 10 |...	| fitur 56 |
 | ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- | -------- | -------- |
 | 10  |   0	|2	|2	|0	|0	|3	|2	|3	|1	|1	 |...	|2	  |
 | 15   |   0	|3	|2	|2	|1	|2	|2	|2	|1	|1	 |...	|2	  |
@@ -82,15 +85,8 @@ Melakukan pembagian data menajadi Data Original, Data Normalisasi, Data Original
 | 6   |   0	|3	|2	|1	|0	|3	|3	|3	|1	|2	 |...	|2	  |
 | 3   |   0	|2	|3	|2	|1	|3	|3	|3	|1	|2	 |...	|1	  |
 
-- Data Original
-|	|fitur 1|fitur 2|fitur 3|fitur 4|fitur 5|fitur 6|fitur 7|fitur 8|fitur 9|fitur 10|...	|fitur 56|
-|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|------|--------|
-|10	|0	|2	|2	|0	|0	|3	|2	|3	|1	|1	 |...	|2	 |
-|15	|0	|3	|2	|2	|1	|2	|2	|2	|1	|1	 |...	|2	 |	
-|26	|0	|2	|2	|2	|0	|2	|1	|2	|1	|1	 |...	|1	 |	
-|6	|0	|3	|2	|1	|0	|3	|3	|3	|1	|2	 |...	|2	 |	
-|3	|0	|2	|3	|2	|1	|3	|3	|3	|1	|2	 |...	|1	 |	
-5 rows × 56 columns
+
+
 
 - Data Normalisasi 
 Melakukan Normalisasi menggunakan StandardScaler
@@ -111,12 +107,13 @@ array([[-0.1796053 ,  1.14707867, -2.00118448, ..., -1.13389342,
 - Data Original PCA
 Dimana data original akan dilakukan PCA atau  Principal component analysis yang digunakan untuk meringkas informasi yang tercantum dalam tabel data besar.
 Heads of Original_PCA:         
-0         1         2         3         4         5         6   \
-0 -1.057646  2.260422 -1.985713 -0.023184 -0.771633 -0.695836  0.125112   
-1 -2.031824  1.281974  1.597589 -1.688171  0.754078  0.411962  0.874224   
-2 -1.601070 -1.522187  0.904781  0.490203 -0.237550 -1.095035 -1.915412   
-3 -0.841556 -1.738084  0.484309  2.097076  1.255459 -1.088126 -1.547277   
-4 -1.464877  0.901017  1.088615  0.745350  1.286815  1.848524  0.612184  
+
+| 0    |     1    |     2    |     3    |     4    |     5     |    6 |  \ |
+| 0 | -1.057646 | 2.260422 | -1.985713 | -0.023184 | -0.771633 | -0.695836 |  0.125112 |  
+| 1 | -2.031824 | 1.281974 | 1.597589 | -1.688171 | 0.754078 |  0.411962 |  0.874224   |
+| 2 | -1.601070 | -1.522187 | 0.904781 | 0.490203 | -0.237550 | -1.095035 | -1.915412   |
+| 3 | -0.841556 | -1.738084 | 0.484309 | 2.097076 | 1.255459 | -1.088126 | -1.547277   |
+| 4 | -1.464877 | 0.901017 | 1.088615 | 0.745350 | 1.286815 |  1.848524 | 0.612184  |
 
 - Data Normalisasi PCA
 Selanjutnya data normalisasi yang dilakukan PCA
