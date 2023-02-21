@@ -75,12 +75,13 @@ Dimana fitur 1 - 56 akan menjadi fitur yang ditantai dengan X. Dan y sebagai pen
 
 Melakukan pembagian data menajadi Data Original, Data Normalisasi, Data Original PCA, Data Normalisasi PCA dengan spliting data 70% untuk data training dan 30 % sebagai data testing.
 - Data Original
-fitur 1	fitur 2	fitur 3	fitur 4	fitur 5	fitur 6	fitur 7	fitur 8	fitur 9	fitur 10	...	fitur 47	fitur 48	fitur 49	fitur 50	fitur 51	fitur 52	fitur 53	fitur 54	fitur 55	fitur 56
-10	0	2	2	0	0	3	2	3	1	1	...	2	2	2	2	2	2	2	2	2	2
-15	0	3	2	2	1	2	2	2	1	1	...	2	2	2	2	2	2	2	2	2	2
-26	0	2	2	2	0	2	1	2	1	1	...	2	2	2	2	2	2	2	1	2	1
-6	0	3	2	1	0	3	3	3	1	2	...	2	2	2	2	1	2	2	2	1	2
-3	0	2	3	2	1	3	3	3	1	2	...	2	2	2	2	2	2	2	2	2	2
+	|fitur 1|fitur 2|fitur 3|fitur 4|fitur 5|fitur 6|fitur 7|fitur 8|fitur 9|fitur 10|...	|
+	|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|------|
+10	|0	|2	|2	|0	|0	|3	|2	|3	|1	|1	 |...	|
+15	|0	|3	|2	|2	|1	|2	|2	|2	|1	|1	 |...	|	
+26	|0	|2	|2	|2	|0	|2	|1	|2	|1	|1	 |...	|	
+6	|0	|3	|2	|1	|0	|3	|3	|3	|1	|2	 |...	|	
+3	|0	|2	|3	|2	|1	|3	|3	|3	|1	|2	 |...	|	
 5 rows × 56 columns
 
 - Data Normalisasi 
@@ -101,7 +102,8 @@ array([[-0.1796053 ,  1.14707867, -2.00118448, ..., -1.13389342,
          
 - Data Original PCA
 Dimana data original akan dilakukan PCA atau  Principal component analysis yang digunakan untuk meringkas informasi yang tercantum dalam tabel data besar.
-Heads of Original_PCA:          0         1         2         3         4         5         6   \
+Heads of Original_PCA:         
+0         1         2         3         4         5         6   \
 0 -1.057646  2.260422 -1.985713 -0.023184 -0.771633 -0.695836  0.125112   
 1 -2.031824  1.281974  1.597589 -1.688171  0.754078  0.411962  0.874224   
 2 -1.601070 -1.522187  0.904781  0.490203 -0.237550 -1.095035 -1.915412   
@@ -110,7 +112,8 @@ Heads of Original_PCA:          0         1         2         3         4       
 
 - Data Normalisasi PCA
 Selanjutnya data normalisasi yang dilakukan PCA
-Heads of iris_pca:          0         1         2         3         4         5         6   \
+Heads of iris_pca:          
+0         1         2         3         4         5         6   \
 0 -1.875112 -1.074126 -3.114162 -0.202740 -1.578644  0.472907 -0.306629   
 1 -2.228485 -3.085196 -0.355241  0.321562  0.962612  1.183493  1.933027   
 2 -2.045345 -0.560281  2.529009  1.166134 -1.090708 -2.418340 -2.856828   
