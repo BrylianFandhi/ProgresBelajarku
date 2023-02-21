@@ -33,7 +33,8 @@ Dimana penjelasan setiap fitur tidak diberikan oleh publiser. Yang saya hanya me
 - class label ada pada atribut pertama.
 - class label adalah nominal, dengan range: 1, 2, 3.
 
-![Box Plot](https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/data%20123.png)
+![data 123](https://user-images.githubusercontent.com/76621303/220351847-97673de3-4f87-45f3-936f-ea0792bcc4ce.png)
+
 
 
 Pada bagian ini dilakukan beberapa proses analisis untuk melihat bagaimana kondisi dari dataset. Hal pertama yang dilakukan adalah melihat apakah ada nilai yang kosong pada data dengan cara cek null data dan cek data nol (0) pada seluruh fitur.  Dimana dari data yang ada, fitur 4 dan fitur 38 terdapat data yang kosong. Fitur 4 memiliki 4 data yang kosong, sedangkan fitur 38 memiliki 1 data kosong.
@@ -47,8 +48,8 @@ fitur 38     3.1
 dtype: float64
 yang dapat mempengaruhi hasil nantinya. Dari hasil tersebut maka data dapat dilakukan ke proses selanjutnya untuk mengisi data yang kosong tersebut.
 
-![Category 1](https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/korr1.png)
-![Category 2](https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/kor2.png)
+![kor2](https://user-images.githubusercontent.com/76621303/220351891-c0c7febb-e860-4926-a3d6-cfa4e2e81478.png)
+![korr1](https://user-images.githubusercontent.com/76621303/220351956-31708ab2-c0ca-465f-a21c-4f29bf0970a9.png)
 
 Dasi hasil korelasi tersebut, menunjukkan korelasi antara data sangat berkaitan. Sehingga data dapat dilanjutkan ke proses selanjutnya, dengan mengisi data yang kosong.
 
@@ -160,7 +161,8 @@ Hasil perhitungan convusion matrix berdasarkan data testing.
 - Recall pada test set:  0.5
 
 Visualisasi convusion matrix:
-![Evaluation 1](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/1.png)
+![1](https://user-images.githubusercontent.com/76621303/220350965-42276a25-5496-4888-a9ce-cb14a58ca2eb.png)
+
 
 ### Data Normalisasi
 Hasil perhitungan convusion matrix berdasarkan data testing
@@ -172,7 +174,8 @@ Hasil perhitungan convusion matrix berdasarkan data testing
 - Recall pada test set:  0.5
 
 Visualisasi convusion matrix:
-![Evaluation 2](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/2.png)
+![2](https://user-images.githubusercontent.com/76621303/220351041-d450350c-b768-4433-b3d6-335389bc5ace.png)
+
 
 ### Data Original PCA
 Hasil perhitungan convusion matrix berdasarkan data testing
@@ -184,7 +187,8 @@ Hasil perhitungan convusion matrix berdasarkan data testing
 - Recall pada test set:  0.4
 
 Visualisasi convusion matrix:
-![Evaluation 3](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/3.png)
+![3](https://user-images.githubusercontent.com/76621303/220351074-687ff1f4-482b-4dda-a915-dc9d0357ab56.png)
+
 
 ### Data Normalisasi PCA
 Hasil perhitungan convusion matrix berdasarkan data testing
@@ -196,15 +200,17 @@ Hasil perhitungan convusion matrix berdasarkan data testing
 - Recall pada test set:  0.6
 
 Visualisasi convusion matrix:
-![Evaluation 4](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/4.png)
+![4](https://user-images.githubusercontent.com/76621303/220351100-e78241ec-1bcf-492d-8011-420ab4111274.png)
+
 
 ## Melakukan Proses Review Pemodelan
 
-	Model	Training Accuracy	Test Accuracy
-0	Decision Tree Data Original	0.636364	0.5
-1	Decision Tree Data Normalisasi	0.636364	0.5
-2	Decision Tree PCA Data Original	0.636364	0.4
-3	Decision Tree PCA Data Normalisasi	0.909091	0.6
+|	| Model	| Training Accuracy |	Test Accuracy |
+| --- | --- | --- | --- |
+| 0	| Decision Tree Data Original |	0.636364 |	0.5 |
+| 1	| Decision Tree Data Normalisasi |	0.636364 |	0.5 |
+| 2	| Decision Tree PCA Data Original |	0.636364 |	0.4 |
+| 3	| Decision Tree PCA Data Normalisasi |	0.909091 |	0.6 |
 
 
 Model	Accuracy	Recall	Precision
