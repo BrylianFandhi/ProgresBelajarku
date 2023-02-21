@@ -213,15 +213,17 @@ Visualisasi convusion matrix:
 | 3	| Decision Tree PCA Data Normalisasi |	0.909091 |	0.6 |
 
 
-Model	Accuracy	Recall	Precision
-0	Decision Tree Data Original	0.5	0.5	0.5
-1	Decision Tree Data Normalisasi	0.5	0.5	0.5
-2	Decision Tree PCA Data Original	0.4	0.4	0.4
-3	Decision Tree PCA Data Normalisasi	0.6	0.6	0.6
+| Model	| Accuracy	| Recall	| Precision |
+| --- | --- | --- | --- |
+| 0	| Decision Tree Data Original	| 0.5	| 0.5	| 0.5 | 
+| 1	| Decision Tree Data Normalisasi	| 0.5	| 0.5	| 0.5 |
+| 2	| Decision Tree PCA Data Original	| 0.4	| 0.4	| 0.4 |
+| 3	| Decision Tree PCA Data Normalisasi | 0.6	| 0.6 	| 0.6 |
 
 
 Visualisasi perbandingan
-![Evaluation 5](https://github.com/BrylianFandhi/ProgresBelajarku/blob/de121aa724036a0fd1ecbb815adcc41a54865dad/SubmisiDicoding1/Submision1/Visualisasi%20Review.png)
+![Visualisasi Review](https://user-images.githubusercontent.com/76621303/220352704-0643f5a7-9504-499c-b18c-cf2cb7d6ef7c.png)
+
 
 
 ### Kesimpulan
