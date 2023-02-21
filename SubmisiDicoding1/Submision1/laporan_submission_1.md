@@ -31,8 +31,8 @@ Pembuatan model machine learning pada proyek menggunakan 1338 data dari Medical 
 - terdapat nilai yang hilang.
 - class label ada pada atribut pertama.
 - class label adalah nominal, dengan range: 1, 2, 3.
+![Box Plot](https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/data%20123.png)
 
-https://github.com/BrylianFandhi/ProgresBelajarku/blob/d52116c14dd145014a601a1d13d9f3e6a36dc652/SubmisiDicoding1/Submision1/data%20123.png
 
 Pada bagian ini dilakukan beberapa proses analisis untuk melihat bagaimana kondisi dari dataset. Hal pertama yang dilakukan adalah melihat apakah ada nilai yang kosong pada data dengan cara cek null data dan cek data nol (0) pada seluruh fitur.  Dimana dari data yang ada, fitur 4 dan fitur 38 terdapat data yang kosong. Fitur 4 memiliki 4 data yang kosong, sedangkan fitur 38 memiliki 1 data kosong.
 fitur 4     4
