@@ -28,8 +28,8 @@ Pembuatan model machine learning pada proyek menggunakan 1338 data dari Medical 
 Dimana penjelasan setiap fitur tidak diberikan oleh publiser. Yang saya hanya menggunakan informasi yang ada pada file informasi yang diberikan pengirim.
 
 Dataset:
-|	| 0	| 1	| 2	| 3	| 4	| 5	| 6	| 7	| 8	| 9	| ...	| 56	|
-| ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- | -------- |
+|  | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 90 |...	|  56 |
+| ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- | -------- | -------- |
 | 0	| 1	| 0	| 3	| 0	| ?	| 0	| 2	| 2	| 2	| 1	| ...	| 2	|	
 | 1	| 1	| 0	| 3	| 3	| 1	| 0	| 3	| 1	| 3	| 1	| ...	| 2	|
 | 2	| 1	| 0	| 3	| 3	| 2	| 0	| 3	| 3	| 3	| 1	| ...	| 2	|	
