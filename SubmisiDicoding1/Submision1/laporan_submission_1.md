@@ -27,6 +27,15 @@ Dari tujuan atau goals yang ditentukan, berikut ini solusi atau cara untuk merai
 Pembuatan model machine learning pada proyek menggunakan 1338 data dari Medical Cost Personal Datasets, data dapat diunduh pada tautan ini.
 Dimana penjelasan setiap fitur tidak diberikan oleh publiser. Yang saya hanya menggunakan informasi yang ada pada file informasi yang diberikan pengirim.
 
+Dataset:
+|	| 0	| 1	| 2	| 3	| 4	| 5	| 6	| 7	| 8	| 9	| ...	| 56	|
+| ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- | -------- |
+| 0	| 1	| 0	| 3	| 0	| ?	| 0	| 2	| 2	| 2	| 1	| ...	| 2	|	
+| 1	| 1	| 0	| 3	| 3	| 1	| 0	| 3	| 1	| 3	| 1	| ...	| 2	|
+| 2	| 1	| 0	| 3	| 3	| 2	| 0	| 3	| 3	| 3	| 1	| ...	| 2	|	
+| 3	| 1	| 0	| 2	| 3	| 2	| 1	| 3	| 3	| 3	| 1	| ...	| 2	|	
+| 4	| 1	| 0	| 3	| 2	| 1	| 1	| 3	| 3	| 3	| 2	| ...	| 2	|	
+
 ### Variabel-variabel pada Lung Cancer DataSet adalah sebagai berikut:
 - 32 sampel (sebagai pasien) dan 56 atribut (banyak data yang harus dipertimbangkan).
 - terdapat nilai yang hilang.
@@ -34,7 +43,6 @@ Dimana penjelasan setiap fitur tidak diberikan oleh publiser. Yang saya hanya me
 - class label adalah nominal, dengan range: 1, 2, 3.
 
 ![data 123](https://user-images.githubusercontent.com/76621303/220351847-97673de3-4f87-45f3-936f-ea0792bcc4ce.png)
-
 
 
 Pada bagian ini dilakukan beberapa proses analisis untuk melihat bagaimana kondisi dari dataset. Hal pertama yang dilakukan adalah melihat apakah ada nilai yang kosong pada data dengan cara cek null data dan cek data nol (0) pada seluruh fitur.  Dimana dari data yang ada, fitur 4 dan fitur 38 terdapat data yang kosong. Fitur 4 memiliki 4 data yang kosong, sedangkan fitur 38 memiliki 1 data kosong.
