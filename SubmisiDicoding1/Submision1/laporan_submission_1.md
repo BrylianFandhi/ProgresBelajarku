@@ -146,6 +146,10 @@ Heads of iris_pca:
         - [max_depth] = 1,21
         - [min sample split] = 2,11
         - [min sample leaf] = 1,101,2
+
+### Decision Tree
+Decision Tree adalah algoritme pembelajaran mesin yang menggunakan seperangkat aturan untuk membuat keputusan dengan struktur seperti pohon yang memodelkan kemungkinan hasil, biaya sumber daya, utilitas, dan kemungkinan konsekuensi atau risiko. Konsepnya adalah menyajikan algoritme dengan pernyataan bersyarat, yang menyertakan cabang-cabang untuk merepresentasikan langkah-langkah pengambilan keputusan yang dapat menghasilkan hasil yang menguntungkan. Dimana nantinya model akan membuat cabang-cabang seperti pohon untuk pembuatan suatu keputusan atau hubungan dari class ke setiap fitur.
+
 - Skenario Pengujian
     - Menggunakan akurasi, presisi dan recall.
     - Pengujian menggunakan Data Original.
