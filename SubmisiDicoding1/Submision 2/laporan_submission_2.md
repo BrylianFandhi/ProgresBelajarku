@@ -214,6 +214,7 @@ Dari 10 buku yang telah dibaca, dapat dilihat bahwa data dari 10 .
 
 Kemudian sistem rekomendasi akan melakukan prediksi terhadap user tersebut dengan menginput data daftar anime yang belum pernah dibaca. Berikut ini adalah top 10 buku yang direkomendasikan.
 
+|index|ISBN|Book\_Title|Book\_Author|Year\_Of\_Publication|Publisher|
 |---|---|---|---|---|---|
 |243|140003180X|The Kalahari Typing School for Men \(No\. 1 Ladies' Detective Agency\)|ALEXANDER MCCALL SMITH|2004|Anchor|
 |249|0804111359|Secret History|DONNA TARTT|1993|Ballantine Books|
