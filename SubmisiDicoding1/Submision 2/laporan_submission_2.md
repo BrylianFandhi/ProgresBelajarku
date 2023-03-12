@@ -193,33 +193,6 @@ Untuk menghasilkan model yang terbaik, parameter tuning diterapkan pada model de
 
 Kemudian perhitungan loss yang digunakan pada model binary crossentropy dan metrik evaluasi yang digunakan adalah Root Mean Squared Error (RMSE). Selanjutnya pelatihan dimulai dengan jumlah epochs=30 dan batch_size=64.
 
-## Evaluation
-Tahapan terakhir yang perlu dilakukan adalah evaluasi model machine learning. Seperti yang sudah dijelaskan pada bagian-bagian sebelumnya bahwa proyek ini akan menghitung evaluasi model menggunakan root mean squared error (rmse). Root Mean Square Error (RMSE) adalah metode pengukuran dengan mengukur perbedaan nilai dari prediksi sebuah model sebagai estimasi atas nilai yang diobservasi. Root Mean Square Error adalah hasil dari akar kuadrat Mean Square Error. RMSE dihitung dengan mengurangi nilai aktual dengan nilai peramalan kemudian dikuadratkan dan dijumlahkan keseluruhan hasilnya kemudian dibagi dengan banyaknya data. Hasil perhitungan tersebut selanjutnya dihitung kembali untuk mencari nilai dari akar kuadrat.
-
-$$ RMSE = \sqrt{\frac{\sum_{t=1}^{n} \left ( actual_t-predict_t \right )}{n}} $$
-
-Dari hasil modelling yang telah dilakukan, terdapat empat model yang dihasilkan setelah training selesai, yaitu sebagai berikut.
-
-| Index |   Model | Parameters                  |
-|------:|--------:|-----------------------------|
-|   0   | model_1 | opt: Adam, emb_size: 50     |
-|   1   | model_2 | opt: Adam, emb_size: 100    |
-|   2   | model_3 | opt: RMSprop, emb_size: 50  |
-|   3   | model_4 | opt: RMSprop, emb_size: 100 |
-
-Berikut ini adalah perbandingan evaluasi RMSE dan Loss dari hasil training per epoch yang telah dilakukan pada setiap model.
-
-![2](https://user-images.githubusercontent.com/76621303/224554655-aed41c66-5c76-439b-94bc-22c9f325da0a.png)
-
-![3](https://user-images.githubusercontent.com/76621303/224554661-06a7eb39-a88f-4bc9-a664-da3df0c013fd.png)
-
-Selanjutnya adalah visualisasi dari perbadingan rmse dan loss dari hasil training pada setiap model menggunakan bar chart.
-
-![4 bener](https://user-images.githubusercontent.com/76621303/224555024-3075306a-b888-4db3-94c2-68dd23e00cd3.png)
-
-
-Dari hasil perbandingan performa model tersebut, model_2 dengan optimizer RMSprop dan emb_size 50 memperoleh tingkat RMSE yang paling rendah pada data testing dan pada tingkat loss model memiliki nilai yang relatif cukup rendah daripada model yang lain yaitu 0,31 pada training dan 0,46. Sehingga pada proyek ini model yang akan digunakan adalah model_2.
-
 ### Mengambil rekomendasi dari satu user
 
 Pada bagian ini model akan diuji secara langsung dengan menginput satu user data untuk melihat bagaimana hasil rekomendasi anime yang diperoleh. Pada contoh disini diambil satu user dengan top 10 buku yang telah ditonton dan diberi rating adalah sebagi berikut.
@@ -255,3 +228,32 @@ Kemudian sistem rekomendasi akan melakukan prediksi terhadap user tersebut denga
 
 
 Dari hasil yang didapatkan, dapat dilihat program dapat memunculkan hasil dari rekomendasi buku yang dapat dibaca oleh pengguna. 
+
+## Evaluation
+Tahapan terakhir yang perlu dilakukan adalah evaluasi model machine learning. Seperti yang sudah dijelaskan pada bagian-bagian sebelumnya bahwa proyek ini akan menghitung evaluasi model menggunakan root mean squared error (rmse). Root Mean Square Error (RMSE) adalah metode pengukuran dengan mengukur perbedaan nilai dari prediksi sebuah model sebagai estimasi atas nilai yang diobservasi. Root Mean Square Error adalah hasil dari akar kuadrat Mean Square Error. RMSE dihitung dengan mengurangi nilai aktual dengan nilai peramalan kemudian dikuadratkan dan dijumlahkan keseluruhan hasilnya kemudian dibagi dengan banyaknya data. Hasil perhitungan tersebut selanjutnya dihitung kembali untuk mencari nilai dari akar kuadrat.
+
+$$ RMSE = \sqrt{\frac{\sum_{t=1}^{n} \left ( actual_t-predict_t \right )}{n}} $$
+
+Dari hasil modelling yang telah dilakukan, terdapat empat model yang dihasilkan setelah training selesai, yaitu sebagai berikut.
+
+| Index |   Model | Parameters                  |
+|------:|--------:|-----------------------------|
+|   0   | model_1 | opt: Adam, emb_size: 50     |
+|   1   | model_2 | opt: Adam, emb_size: 100    |
+|   2   | model_3 | opt: RMSprop, emb_size: 50  |
+|   3   | model_4 | opt: RMSprop, emb_size: 100 |
+
+Berikut ini adalah perbandingan evaluasi RMSE dan Loss dari hasil training per epoch yang telah dilakukan pada setiap model.
+
+![2](https://user-images.githubusercontent.com/76621303/224554655-aed41c66-5c76-439b-94bc-22c9f325da0a.png)
+
+![3](https://user-images.githubusercontent.com/76621303/224554661-06a7eb39-a88f-4bc9-a664-da3df0c013fd.png)
+
+Selanjutnya adalah visualisasi dari perbadingan rmse dan loss dari hasil training pada setiap model menggunakan bar chart.
+
+![4 bener](https://user-images.githubusercontent.com/76621303/224555024-3075306a-b888-4db3-94c2-68dd23e00cd3.png)
+
+
+Dari hasil perbandingan performa model tersebut, model_2 dengan optimizer RMSprop dan emb_size 50 memperoleh tingkat RMSE yang paling rendah pada data testing dan pada tingkat loss model memiliki nilai yang relatif cukup rendah daripada model yang lain yaitu 0,31 pada training dan 0,46. Sehingga pada proyek ini model yang akan digunakan adalah model_2.
+
+
